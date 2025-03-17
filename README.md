@@ -5,7 +5,7 @@ MagiKTCG es una tienda online especializada en la venta de cartas y productos co
 
 ## 🎯 Objetivos
 - Desarrollar un e-commerce funcional para la venta de cartas coleccionables.
-- Implementar una interfaz intuitiva y responsive sin el uso de frameworks como Bootstrap.
+- Implementar una interfaz intuitiva y responsive pensando en el uso de cualquier visitante.
 - Crear un sistema de autenticación de usuarios (registro, login, recuperación de contraseña).
 - Integrar una base de datos con PHP y MySQL para la gestión de productos y usuarios.
 - Ofrecer un sistema de filtrado y búsqueda avanzada para los productos.
