@@ -25,3 +25,7 @@ MagiKTCG es una tienda online especializada en la venta de cartas y productos co
 - FontAwesome para iconos.
 - Fetch API para manejo de peticiones asíncronas.
 - Implementación de pagos con Stripe, Paypal i/o Google Pay
+
+
+### **Recordatorio**
+- El trabajo trata sobre pokemon porque es mi pasión y queria combinarlo con algo de mi dia a dia e infancia, pero igualmente estara hecho para ser una plantilla para cualquier tematica, cambiando fotos y nombres puede pasar a ser sobre compra y venta de colecciones de Futbol, WWE, Lorcana, Dragon Ball, One Piece... O porque no, de TODO a la vez 😀
