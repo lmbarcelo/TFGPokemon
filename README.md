@@ -24,3 +24,4 @@ MagiKTCG es una tienda online especializada en la venta de cartas y productos co
 - Git y GitHub para control de versiones.
 - FontAwesome para iconos.
 - Fetch API para manejo de peticiones asíncronas.
+- Implementación de pagos con Stripe, Paypal i/o Google Pay
