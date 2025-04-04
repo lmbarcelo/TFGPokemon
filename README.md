@@ -50,6 +50,8 @@ El trabajo trata sobre **Pokémon** porque es mi pasión y quería combinarlo co
 - 📑 **Pedidos** ➝ 💳 **Métodos de Pago** **(N:1)** ~ Un pedido usa un único método de pago
 
 # 📋 Diagrama de Clases
+![uml drawio](https://github.com/user-attachments/assets/a6256997-a842-4acb-88df-b90e3fc20634)
+
 ```plantuml
 class Usuario {
   - id: int
