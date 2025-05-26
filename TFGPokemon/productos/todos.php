@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <?php
     session_start();
+    $conexion = new mysqli("localhost", "root", "", "magiktcg");
+
+    if ($conexion->connect_error) {
+        die("Conexión fallida: " . $conexion->connect_error);
+    }
     $usuario = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : null;
 ?>
-<html lang="en">
+
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MagiK TCG - Contacto</title>
+    <title>Productos Japonés</title>
     <link rel="stylesheet" href="../estilos/style.css">
     <script src="https://kit.fontawesome.com/f7a2fd75dd.js" crossorigin="anonymous"></script>
 </head>
@@ -19,7 +25,6 @@
     </div>
 
     <!-- Header -->
-        <!-- Header -->
     <header class="header">
         <div class="logos">
             <img src="../img/logoGar.png" alt="Logo Gar" class="logoGar">
@@ -38,7 +43,7 @@
             <?php else: ?>
                 <button class="btnLogin" onclick="window.location.href='login/front/login.html'">Login</button>
             <?php endif; ?>
-            <a href="carrito.php" aria-label="Carrito">
+            <a href="carrito.html" aria-label="Carrito">
                 <i class="fas fa-shopping-cart"></i>
             </a>
         </div>
@@ -46,58 +51,49 @@
             <ul>
                 <li><a href="../index.php">Inicio</a></li>
                 <li class="menu-productos">
-                    <a href="../productos/todos.php">Productos</a>
+                    <a href="todos.php">Productos</a>
                     <ul class="menuInvisible">
-                        <li><a href="../productos/japanese.php">Japonés</a></li>
-                        <li><a href="../productos/korean.php">Coreano</a></li>
-                        <li><a href="../productos/english.php">Inglés</a></li>
-                        <li><a href="../productos/spanish.php">Español</a></li>
+                        <li><a href="japanese.php">Japonés</a></li>
+                        <li><a href="korean.php">Coreano</a></li>
+                        <li><a href="english.php">Inglés</a></li>
+                        <li><a href="spanish.php">Español</a></li>
                     </ul>
                 </li>
-                <li><a href="contacto.php">Contacto</a></li>
+                <li><a href="../politicas/contacto.php">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="form-section">
-        <div class="form-content">
-            <div class="form-text">
-                <h2>Contacto</h2>
-                <form action="procesar_contacto.php" method="POST" class="formulario-contacto" id="formContacto">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="comentario">Comentario:</label>
-                    <textarea id="comentario" name="comentario" rows="5" required></textarea>
-
-                    <button type="submit">Enviar</button>
-                </form>
-                <p class="aviso">Recuerda que no debes enviar información sensible a través de este formulario.</p>
-                <p class="aviso">Si tienes alguna duda, consulta nuestra <a href="privacidad.html">Política de Privacidad</a>.</p>
-                <!-- popup -->
-                <div id="popup" class="popup">
-                    <div class="popup-content">
-                        <p id="popup-mensaje"></p>
-                        <button onclick="cerrarPopup()">Cerrar</button>
-                    </div>
+    <?php
+        $query = "SELECT * FROM productos ";
+        $resultado = $conexion->query($query);
+    ?>
+    <section class="productos">
+        <h1>Todos los productos</h1>
+        <p>Explora nuestra selección de productos. ¡Encuentra lo que buscas!</p>
+        <div class="contenedor-productos">
+            <?php while ($row = $resultado->fetch_assoc()): ?>
+                <div class="producto">
+                    <img src="../img/sobres/<?= htmlspecialchars($row['imagen']) ?>" alt="<?= htmlspecialchars($row['nombre']) ?>">
+                    <h3><?= htmlspecialchars($row['nombre']) ?></h3>
+                    <p>Precio: $<?= number_format($row['precio'], 2) ?></p>
+                    <button>Añadir al carrito</button>
                 </div>
-            </div>
+            <?php endwhile; ?>
         </div>
     </section>
 
-    <!-- Footer -->
+
+        <!-- Footer -->
     <footer class="footer">
         <div class="footer-menu">
             <ul>
-                <li><a href="contacto.php">Contacto</a></li>
-                <li><a href="envio.php">Política de Envío</a></li>
-                <li><a href="devolucion.php">Política de Devolución</a></li>
-                <li><a href="privacidad.php">Política de Privacidad</a></li>
-                <li><a href="terminos.php">Términos de Servicio</a></li>
-                <li><a href="aviso_legal.php">Aviso Legal</a></li>
+                <li><a href="../politicas/contacto.php">Contacto</a></li>
+                <li><a href="../politicas/envio.php">Política de Envío</a></li>
+                <li><a href="../politicas/devolucion.php">Política de Devolución</a></li>
+                <li><a href="../politicas/privacidad.php">Política de Privacidad</a></li>
+                <li><a href="../politicas/terminos.php">Términos de Servicio</a></li>
+                <li><a href="../politicas/aviso_legal.php">Aviso Legal</a></li>
             </ul>
         </div>
         <div class="footer-social">
@@ -112,6 +108,5 @@
     </footer>
 
     <script src="../scripts/menu.js"></script>
-    <script src="../scripts/form-contacto.js"></script>
 </body>
 </html>

@@ -36,7 +36,7 @@
                 <span style="color: white; font-weight: bold;">👋 Hola, <?= htmlspecialchars($usuario) ?>!</span>
                 <a href="login/back/logout.php" style="margin-left: 10px; color: white;">Cerrar sesión</a>
             <?php else: ?>
-                <button class="btnLogin" onclick="window.location.href='login/front/login.html'">Login</button>
+                <button class="btnLogin" onclick="window.location.href='login/front/login.php'">Login</button>
             <?php endif; ?>
             <a href="carrito.html" aria-label="Carrito">
                 <i class="fas fa-shopping-cart"></i>
@@ -46,12 +46,12 @@
             <ul>
                 <li><a href="index.php">Inicio</a></li>
                 <li class="menu-productos">
-                    <a href="idiomas/todos.php">Productos</a>
+                    <a href="productos/todos.php">Productos</a>
                     <ul class="menuInvisible">
-                        <li><a href="idiomas/japanese.php">Japonés</a></li>
-                        <li><a href="idiomas/korean.php">Coreano</a></li>
-                        <li><a href="idiomas/english.php">Inglés</a></li>
-                        <li><a href="idiomas/spanish.php">Español</a></li>
+                        <li><a href="productos/japanese.php">Japonés</a></li>
+                        <li><a href="productos/korean.php">Coreano</a></li>
+                        <li><a href="productos/english.php">Inglés</a></li>
+                        <li><a href="productos/spanish.php">Español</a></li>
                     </ul>
                 </li>
                 <li><a href="politicas/contacto.php">Contacto</a></li>
@@ -113,10 +113,10 @@
     <section class="languages-section">
         <h2>Idiomas</h2>
         <div class="languages">
-            <a href="idiomas/english.html"><img src="img/flags/english.png" alt="English"></a>
-            <a href="idiomas/spanish.html"><img src="img/flags/spanish.png" alt="Español"></a>
-            <a href="idiomas/korean.html"><img src="img/flags/korean.png" alt="Coreano"></a>
-            <a href="idiomas/japanese.html"><img src="img/flags/japanese.png" alt="Japonés"></a>
+            <a href="productos/english.php"><img src="img/flags/english.png" alt="English"></a>
+            <a href="productos/spanish.php"><img src="img/flags/spanish.png" alt="Español"></a>
+            <a href="productos/korean.php"><img src="img/flags/korean.png" alt="Coreano"></a>
+            <a href="productos/japanese.php"><img src="img/flags/japanese.png" alt="Japonés"></a>
         </div>
     </section>
 

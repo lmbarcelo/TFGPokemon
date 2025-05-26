@@ -46,12 +46,12 @@
             <ul>
                 <li><a href="../index.php">Inicio</a></li>
                 <li class="menu-productos">
-                    <a href="../idiomas/todos.php">Productos</a>
+                    <a href="../productos/todos.php">Productos</a>
                     <ul class="menuInvisible">
-                        <li><a href="../idiomas/japanese.php">Japonés</a></li>
-                        <li><a href="../idiomas/korean.php">Coreano</a></li>
-                        <li><a href="../idiomas/english.php">Inglés</a></li>
-                        <li><a href="../idiomas/spanish.php">Español</a></li>
+                        <li><a href="../productos/japanese.php">Japonés</a></li>
+                        <li><a href="../productos/korean.php">Coreano</a></li>
+                        <li><a href="../productos/english.php">Inglés</a></li>
+                        <li><a href="../productos/spanish.php">Español</a></li>
                     </ul>
                 </li>
                 <li><a href="contacto.php">Contacto</a></li>
@@ -150,6 +150,6 @@
     </footer>
 
 
-    <script src="scripts/menu.js"></script>
+    <script src="../scripts/menu.js"></script>
 </body>
 </html>
