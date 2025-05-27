@@ -129,7 +129,7 @@ Pedido --> MetodoPago : usa
 
 
 
-    COnsulta SQL Para crear la base de datos y la tabla contacto
+    <!--COnsulta SQL Para crear la base de datos y la tabla contacto
     CREATE DATABASE magiktcg;
     USE magiktcg;
     
@@ -139,7 +139,7 @@ Pedido --> MetodoPago : usa
         email VARCHAR(100) NOT NULL,
         comentario TEXT NOT NULL,
         fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    );
+    );-->
 
 <!-- -- Crea la tabla productos
 CREATE TABLE productos (
