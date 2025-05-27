@@ -126,3 +126,17 @@ Pedido --> MetodoPago : usa
 - 🛍️ **Administrar catálogo de productos**
 - 📜 **Ver historial de pedidos**
 - 🏦 **Gestionar métodos de pago**
+
+
+
+    COnsulta SQL Para crear la base de datos y la tabla contacto
+    CREATE DATABASE magiktcg;
+    USE magiktcg;
+    
+    CREATE TABLE contacto (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        nombre VARCHAR(100) NOT NULL,
+        email VARCHAR(100) NOT NULL,
+        comentario TEXT NOT NULL,
+        fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
