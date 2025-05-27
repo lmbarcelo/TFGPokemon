@@ -140,3 +140,34 @@ Pedido --> MetodoPago : usa
         comentario TEXT NOT NULL,
         fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );
+
+<!-- -- Crea la tabla productos
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    precio DECIMAL(10,2) NOT NULL,
+    idioma ENUM('english', 'japanese', 'korean', 'spanish') NOT NULL,
+    imagen VARCHAR(255) NOT NULL
+);
+
+-- Ejemplo de inserciones para cada idioma y sobre
+INSERT INTO productos (nombre, precio, idioma, imagen) VALUES
+('Brilliant Stars', 5.00, 'english', 'english/brilliant_stars.png'),
+('Cosmic Eclipse', 5.00, 'english', 'english/cosmic_eclipse.png'),
+('Evolving Skies', 5.00, 'english', 'english/evolving_skies.png'),
+('Obsidian Flames', 5.00, 'english', 'english/obsidian_flames.png'),
+
+('Incandescent Arcana', 5.00, 'japanese', 'japanese/incandescent_arcana.png'),
+('Paradigm Trigger', 5.00, 'japanese', 'japanese/paradigm_trigger.png'),
+('Shiny Treasure EX', 5.00, 'japanese', 'japanese/shiny_treasure_ex.png'),
+('VSTAR Universe', 5.00, 'japanese', 'japanese/vstar_universe.png'),
+
+('Dark Phantasma', 5.00, 'korean', 'korean/dark_phantasma.png'),
+('Fusion Arts', 5.00, 'korean', 'korean/fusion_arts.png'),
+('Lost Abyss', 5.00, 'korean', 'korean/lost_abyss.png'),
+('Silver Tempest', 5.00, 'korean', 'korean/silver_tempest.png'),
+
+('Brilliant Stars', 5.00, 'spanish', 'spanish/brilliant_stars.png'),
+('Cosmic Eclipse', 5.00, 'spanish', 'spanish/cosmic_eclipse.png'),
+('Evolving Skies', 5.00, 'spanish', 'spanish/evolving_skies.png'),
+('Obsidian Flames', 5.00, 'spanish', 'spanish/obsidian_flames.png'); -->
