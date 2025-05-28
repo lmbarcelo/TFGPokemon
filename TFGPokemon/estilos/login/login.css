@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppin&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+  z-index: 99;
+  background: transparent;
+}
+.header .menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.header .menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  z-index: 9999;
+}
+.header .menu ul li {
+  position: relative;
+}
+.header .menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.header .menu ul li a:hover {
+  color: #63999F;
+}
+.header .menu ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #694E8D;
+  padding: 10px;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+}
+.header .menu ul li ul li a {
+  color: #ffffff;
+}
+.header .menu ul li ul li a:hover {
+  text-decoration: underline;
+}
+.header .menu ul li:hover ul {
+  display: flex;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../img/fondos/fondomiraidon.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  height: 75%;
+  transform: translate(-50%, -50%);
+  background-image: url(./imagenes/background.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 100px 0;
+  align-items: center;
+}
+.content img {
+  margin-bottom: 4em;
+}
+.content a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  background: transparent;
+  margin-top: 20px;
+}
+.content h2 {
+  font-size: 3.5em;
+  text-align: center;
+  color: #fff;
+  background: transparent;
+}
+.content h3 {
+  font-size: 2em;
+  text-align: center;
+  color: #fff;
+  background: transparent;
+}
+.content p {
+  margin-top: 20px;
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+  background: transparent;
+}
+.content .icon {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+.content .icon i {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.login {
+  width: 450px;
+  position: relative;
+  padding: 150px 30px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px); /*HACER DIFUMINADO*/
+}
+.login h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.login .input {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 40px;
+}
+.login .input .input1 {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.login .input i {
+  position: relative;
+  right: -370px;
+  bottom: 27px;
+  color: #fff;
+}
+.login .button {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+}
+.login .sign-up {
+  display: flex;
+  justify-content: space-evenly;
+}
+.login .sign-up a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+.login .sign-up a:hover {
+  text-decoration: underline;
+}
+.login .sign-up p {
+  color: #fff;
+}
+
+::-moz-placeholder {
+  color: #fff;
+  font-size: 18px;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 18px;
+}
+
+.check {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.check a {
+  text-decoration: none;
+  color: #fff;
+}
+.check a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background-color: crimson;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 7px;
+  color: #fff;
+}
+button:active {
+  font-size: 25px;
+}/*# sourceMappingURL=login.css.map */
