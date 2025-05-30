@@ -1,0 +1,141 @@
+@import "../variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppin&display=swap');
+@import"../style.scss";
+
+.procesar-main {
+  max-width: 700px;
+  margin: 40px auto 40px auto;
+  background: #fff;
+  color: #222;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  padding: 32px 24px;
+
+}
+
+.procesar-lista {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #EDBBCD;
+    color: #222;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 10px 16px;
+    font-size: 16px;
+    flex-wrap: wrap;
+
+    .producto-detalle {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 1;
+
+      .producto-img {
+        width: 80px;
+        height: auto;
+        border-radius: 6px;
+        object-fit: contain;
+      }
+
+      .producto-info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 15px;
+
+        .producto-nombre {
+          font-weight: bold;
+          color: #304F84;
+        }
+
+        .producto-cantidad,
+        .producto-precio {
+          color: #222;
+        }
+      }
+    }
+
+    form {
+      margin-left: 10px;
+
+      .btnEliminar {
+        background: #63999F;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 4px 10px;
+        cursor: pointer;
+        &:hover {
+          background: #304F84;
+        }
+      }
+    }
+  }
+}
+
+
+.procesar-total {
+  font-size: 20px;
+  color: #304F84;
+  margin-bottom: 24px;
+}
+
+.procesar-pago {
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 24px 18px;
+  margin-top: 24px;
+  h3 {
+    color: #304F84;
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+}
+
+.procesar-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    label {
+      font-weight: bold;
+      color: #58446D;
+      margin-bottom: 4px;
+    }
+    input[type="text"],
+    input[type="tel"] {
+      padding: 8px;
+      border: 1px solid #694E8D;
+      border-radius: 5px;
+      background: #EDBBCD;
+      color: #222;
+      font-size: 15px;
+    }
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+  }
+  .tarjeta-info {
+    background: #EDBBCD;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-top: 8px;
+    label {
+      color: #304F84;
+    }
+    input {
+      margin-bottom: 8px;
+    }
+  }
+
+}
+
+
+
