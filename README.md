@@ -24,7 +24,7 @@
 - ⚙️ **Git y GitHub** para control de versiones.
 - 🌐 **FontAwesome** para iconos.
 - 📨 **Fetch API** para manejo de peticiones asíncronas.
-- 💳 Implementación de pagos con **Stripe**, **Paypal** i/o **Google Pay**.
+- 💳 Implementación de pagos con  **Paypal** y **Tarjeta de Credito**.
 
 ### **Recordatorio**
 El trabajo trata sobre **Pokémon** porque es mi pasión y quería combinarlo con algo de mi día a día e infancia, pero igualmente estará hecho para ser una plantilla para cualquier temática. Cambiando fotos y nombres, puede pasar a ser sobre compra y venta de colecciones de **Fútbol**, **WWE**, **Lorcana**, **Dragon Ball**, **One Piece**... ¡O por qué no, de TODO a la vez! 🎉😀
