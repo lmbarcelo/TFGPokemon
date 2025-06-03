@@ -24,7 +24,7 @@ foreach ($idiomas as $idioma => $variantes) {
     }
 }
 
-// Buscar producto exacto (puedes usar LIKE para más flexibilidad)
+// Buscar producto exacto 
 $stmt = $conexion->prepare("SELECT * FROM productos WHERE LOWER(nombre) LIKE CONCAT('%', ?, '%') LIMIT 1");
 $stmt->bind_param("s", $q_lower);
 $stmt->execute();
@@ -32,7 +32,6 @@ $result = $stmt->get_result();
 
 $no_encontrado = false;
 if ($row = $result->fetch_assoc()) {
-    // Redirige al archivo del idioma con el nombre del producto como parámetro
     $idioma = $row['idioma'];
     $nombre = urlencode($row['nombre']);
     header("Location: productos/{$idioma}.php?producto=$nombre");
