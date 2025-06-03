@@ -7,7 +7,7 @@
 //     fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 // );
 
-    // Conexión a la base de datos (ajusta las credenciales)
+    // Conexión a la base de datos (credenciales de mi xampp --> root y "")
     $conexion = new mysqli("localhost", "root", "", "magiktcg");
 
     if ($conexion->connect_error) {
