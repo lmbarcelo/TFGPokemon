@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    // Conexión a la base de datos (ajusta las credenciales)
+    // Conexión a la base de datos (ponet credenciales de mi xampp)
     $conexion = new mysqli("localhost", "root", "", "magiktcg");
 
     if ($conexion->connect_error) {
