@@ -779,7 +779,6 @@ body {
 
   .tiktok-embed {
     margin: 0 auto;
-    // Puedes ajustar el ancho máximo si lo deseas
     max-width: 605px;
     min-width: 325px;
   }
@@ -947,7 +946,7 @@ body {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #222; /* o el color de fondo que uses */
+        background-color: #222; 
         z-index: 1000;
         padding: 1rem 0;
     }
@@ -963,7 +962,6 @@ body {
         flex-direction: column;
     }
 
-    /* Asegura que el submenú de productos siempre esté desplegado */
     .menu-productos .menuInvisible {
         display: block !important;
         position: static;
@@ -973,7 +971,7 @@ body {
     }
 
     .menu-productos > a::after {
-        content: ""; /* Eliminar icono de flecha si lo hay */
+        content: ""; 
     }
     }
   }
