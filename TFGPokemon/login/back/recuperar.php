@@ -30,7 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    // Aquí podrías generar un token de restablecimiento y enviarlo por correo
     $_SESSION['recuperar_exito'] = "Si el correo existe, recibirás instrucciones para restablecer tu contraseña.";
     header("Location: ../front/recuperar.php");
     exit;
