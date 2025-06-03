@@ -1,5 +1,3 @@
-// scripts/pokemon-carousel.js
-
 document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelector("#slider");
   let sliderSections = document.querySelectorAll(".slider_seccion");
@@ -36,5 +34,5 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("boton_derecha").addEventListener("click", siguiente);
   document.getElementById("boton_izquierda").addEventListener("click", anterior);
 
-  setInterval(siguiente, 10000); // cada 10 segundos
+  setInterval(siguiente, 10000);
 });
