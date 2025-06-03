@@ -16,7 +16,7 @@
 
         foreach ($_SESSION['carrito'] as $producto) {
             $productoNombre = $conexion->real_escape_string($producto['nombre']);
-            $idioma = $conexion->real_escape_string($producto['idioma']); // Asegúrate de tener este campo
+            $idioma = $conexion->real_escape_string($producto['idioma']); 
             $subtotal = $producto['precio'] * $producto['cantidad'];
             $total += $subtotal;
 
